@@ -168,6 +168,8 @@ script on a Raspberry Pi. To do that, run the following commands:
 ~/klipper/scripts/calibrate_shaper.py /tmp/resonances_x_*.csv -o /tmp/shaper_calibrate_x.png
 ~/klipper/scripts/calibrate_shaper.py /tmp/resonances_y_*.csv -o /tmp/shaper_calibrate_y.png
 ```
+If you get an error message when running the command, you could have several python instances installed.
+If thats the case try again with `python3` or simpy `python`  infront of the command.
 This script will generate the charts `/tmp/shaper_calibrate_x.png` and
 `/tmp/shaper_calibrate_y.png` with frequency responses. You will also get the
 suggested frequencies for each input shaper, as well as which input shaper is
